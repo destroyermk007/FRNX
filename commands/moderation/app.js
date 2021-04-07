@@ -78,7 +78,7 @@ module.exports = {
 
                                                                                                                                                         .then(() => {
                                                                                                                                                             console.log(apparray)
-                                                                                                                                                            if (!apparray[8].includes('https://krunker.io/social.html?p=profile&q=7sin_ASURA')) return;
+                                                                                                                                                            if (!apparray[8].includes('https://krunker.io/social.html?p=profile&q=')) return;
                                                                                                                                                             bot.channels.resolve('829362442957357096').send(new MessageEmbed()
                                                                                                                                                                 .setTitle(`Application by ${message.author.username} (${message.author.id})`)
                                                                                                                                                                 .setColor('RANDOM')
