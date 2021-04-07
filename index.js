@@ -16,6 +16,12 @@ for (const folder of commandFolders) {
 }
 bot.on('ready', async () => {
     console.log('I am online')
+    bot.user.setActivity(`with EJ in bed`, {
+        type: 'PLAYING'
+    })
+    bot.channels.resolve('829369004564152390').send(new MessageEmbed()
+    .setDescription('```diff\n+ Successful reboot```')
+    .setTimestamp()).catch(console.error)
 })
 bot.on('message', async message => {
     if (!message.content.startsWith(prefix)) return;
