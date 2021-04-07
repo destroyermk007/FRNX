@@ -30,4 +30,15 @@ bot.on('message', async message => {
         console.log(error)
     }
 })
+
+bot.on('message' , async message => {
+    if (message.channel.id !== '829362442957357096') return;
+    if (message.author.id !== '828261871089221662') return
+    try {
+        await message.react('👍')
+        await message.react('👎')
+    } catch (e) {
+        console.log(e)
+    }
+})
 bot.login(process.env.token)
