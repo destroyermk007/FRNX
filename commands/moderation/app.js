@@ -77,10 +77,12 @@ module.exports = {
 
 
                                                                                                                                                         .then(() => {
-                                                                                                                                                            if (!apparray.includes('https://krunker.io/social.html?p=profile&q=')) return
+                                                                                                                                                            console.log(apparray)
+                                                                                                                                                            if (!apparray[8].includes('https://krunker.io/social.html?p=profile&q=7sin_ASURA')) return;
                                                                                                                                                             bot.channels.resolve('828263291590803491').send(new MessageEmbed()
                                                                                                                                                                 .setTitle(`Application by ${message.author.username} (${message.author.id})`)
                                                                                                                                                                 .setColor('RANDOM')
+                                                                                                                                                               // .setThumbnail(`${message.author.displayAvatarURL({dynamic:true})}`)
                                                                                                                                                                 .addFields(
                                                                                                                                                                     { name: 'IGN', value: `${apparray[0]}` },
                                                                                                                                                                     { name: 'Level', value: `${apparray[1]}` },
@@ -93,6 +95,8 @@ module.exports = {
                                                                                                                                                                     { name: 'Profile Link', value: `${apparray[8]}` }
                                                                                                                                                                 )
                                                                                                                                                                 .setFooter('Bot made by EJ BEAN#3961'))
+                                                                                                                 
+                                                                                                                                                            
 
                                                                                                                                                         })
 
